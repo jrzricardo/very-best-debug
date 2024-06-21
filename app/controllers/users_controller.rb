@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
 
+
   def index
     matching_users = User.all
     @users = matching_users.order(:created_at)
